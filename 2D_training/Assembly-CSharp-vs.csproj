@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\2DCharacterPerso\PlayerPersoScript.cs" />
+     <Compile Include="Assets\BlinderTerrain.cs" />
      <Compile Include="Assets\PlatformSpecific\MobileInput.cs" />
      <Compile Include="Assets\PlatformSpecific\StandaloneInput.cs" />
      <Compile Include="Assets\Scripts 1\AxisTouchButton.cs" />
@@ -71,6 +72,7 @@
      <Compile Include="Assets\Scripts\HealthBar.cs" />
      <Compile Include="Assets\Scripts\MoveUV.cs" />
      <Compile Include="Assets\Scripts\PlaneBehaviour.cs" />
+     <Compile Include="Assets\SpawnBlind.cs" />
      <None Include="Assets\AstarPathfindingEditor\Editor\EditorAssets\Materials\Navmesh2.shader" />
      <None Include="Assets\Plugins\AstarPathfindingProject\Plugins\DotNetZip\License.txt" />
      <None Include="Assets\Plugins\AstarPathfindingProject\ExampleScenes\Materials\Projector Multiply.shader" />
