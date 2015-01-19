@@ -1,8 +1,8 @@
 fileFormatVersion: 2
-guid: b3d8494778ca70d438caa32cadf5f09d
+guid: 482797ade01d66841a521f6cbb36eac3
 TextureImporter:
   fileIDToRecycleName:
-    21300000: AlienSpaceship_0
+    21300000: BigPlateformPurple
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -37,22 +37,22 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
-  spriteBorder: {x: 0, y: 48, z: 40, w: 0}
-  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 50
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: AlienSpaceship_0
+    - name: BigPlateformPurple
       rect:
         serializedVersion: 2
         x: 0
-        y: 48
-        width: 23
-        height: 16
+        y: 256
+        width: 95
+        height: 94
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

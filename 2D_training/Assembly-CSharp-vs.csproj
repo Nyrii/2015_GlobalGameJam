@@ -47,13 +47,6 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\2DCharacterPerso\PlayerPersoScript.cs" />
-     <Compile Include="Assets\Anims\Scripts\CameraFollow.cs" />
-     <Compile Include="Assets\Anims\Scripts\EnnemyBehaviour.cs" />
-     <Compile Include="Assets\Anims\Scripts\GameManager.cs" />
-     <Compile Include="Assets\Anims\Scripts\HealthBar.cs" />
-     <Compile Include="Assets\Anims\Scripts\MoveUV.cs" />
-     <Compile Include="Assets\Anims\Scripts\PlaneBehaviour.cs" />
-     <Compile Include="Assets\EnemyAI.cs" />
      <Compile Include="Assets\PlatformSpecific\MobileInput.cs" />
      <Compile Include="Assets\PlatformSpecific\StandaloneInput.cs" />
      <Compile Include="Assets\Scripts 1\AxisTouchButton.cs" />
@@ -71,6 +64,13 @@
      <Compile Include="Assets\Scripts 1\TiltInput.cs" />
      <Compile Include="Assets\Scripts 1\TouchPad.cs" />
      <Compile Include="Assets\Scripts 1\VirtualInput.cs" />
+     <Compile Include="Assets\Scripts\CameraFollow.cs" />
+     <Compile Include="Assets\Scripts\EnemyAI.cs" />
+     <Compile Include="Assets\Scripts\EnnemyBehaviour.cs" />
+     <Compile Include="Assets\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Scripts\HealthBar.cs" />
+     <Compile Include="Assets\Scripts\MoveUV.cs" />
+     <Compile Include="Assets\Scripts\PlaneBehaviour.cs" />
      <None Include="Assets\AstarPathfindingEditor\Editor\EditorAssets\Materials\Navmesh2.shader" />
      <None Include="Assets\Plugins\AstarPathfindingProject\Plugins\DotNetZip\License.txt" />
      <None Include="Assets\Plugins\AstarPathfindingProject\ExampleScenes\Materials\Projector Multiply.shader" />
