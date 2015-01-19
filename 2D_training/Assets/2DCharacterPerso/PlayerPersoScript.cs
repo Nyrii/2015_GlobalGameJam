@@ -8,10 +8,14 @@ public class PlayerPersoScript : MonoBehaviour {
 	Animator anim;
 	public float MoveSpeed = 10f;
 	int runAnim = Animator.StringToHash("PlayerVelocity");
-
 	void Start () 
 	{
 		anim = this.GetComponent<Animator>();
+		if (anim == null)
+		{
+			Debug.LogError("no anim attached");
+			return;
+		}
 	}
 
 	float horizontalVel;
