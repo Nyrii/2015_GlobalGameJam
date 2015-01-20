@@ -73,6 +73,7 @@
      <Compile Include="Assets\Scripts\MoveUV.cs" />
      <Compile Include="Assets\Scripts\PlaneBehaviour.cs" />
      <Compile Include="Assets\SpawnBlind.cs" />
+     <Compile Include="Assets\Teleporter.cs" />
      <None Include="Assets\AstarPathfindingEditor\Editor\EditorAssets\Materials\Navmesh2.shader" />
      <None Include="Assets\Plugins\AstarPathfindingProject\Plugins\DotNetZip\License.txt" />
      <None Include="Assets\Plugins\AstarPathfindingProject\ExampleScenes\Materials\Projector Multiply.shader" />

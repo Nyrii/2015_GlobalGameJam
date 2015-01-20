@@ -8,7 +8,9 @@ public class SpawnBlind : MonoBehaviour {
 	public int startYPos = 0;
 	public int endXPos = 0;
 	public int endYPos = 0;
-	
+
+
+	//see invoke
 	void Start()
 	{
 		for(int j = startXPos; j <= endXPos; j++)
