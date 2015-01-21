@@ -5,7 +5,7 @@ using System.Collections;
 [RequireComponent(typeof(DistanceJoint2D))]
 public class BatScript : MonoBehaviour {
 
-	//Batlasso
+	//Batgrapin
 	LineRenderer lineRend;
 	DistanceJoint2D joint;
 
@@ -28,11 +28,10 @@ public class BatScript : MonoBehaviour {
 		{
 			joint.enabled = true;
 			lineRend.enabled = true;
-			joint.connectedAnchor = ray.collider.gameObject.transform.position;
+			joint.connectedAnchor =(Vector2) ray.collider.gameObject.transform.position;
 			joint.anchor = new Vector2(0, 0);
 			lineRend.SetPosition(0, transform.position);
 			lineRend.SetPosition(1, ray.collider.gameObject.transform.position);
-			Debug.DrawRay(transform.position, ray.collider.gameObject.transform.position - transform.position);
 		}
 		else
 		{

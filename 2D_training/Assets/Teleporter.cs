@@ -5,7 +5,7 @@ public class Teleporter : MonoBehaviour {
 
 	public float 				activationDelay = 3;
 	[HideInInspector]
-	public float lastActivation = 0;
+	public float 				lastActivation = 0;
 	public GameObject 		pairedTeleporter;
 	GameObject 				player;
 
@@ -21,7 +21,6 @@ public class Teleporter : MonoBehaviour {
 	void Update () 
 	{
 		lastActivation -= Time.deltaTime;
-
 	}
 
 	void OnTriggerEnter2D (Collider2D col)
