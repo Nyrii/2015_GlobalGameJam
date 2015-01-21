@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\2DCharacterPerso\PlayerPersoScript.cs" />
+     <Compile Include="Assets\BatScript.cs" />
      <Compile Include="Assets\BlinderTerrain.cs" />
      <Compile Include="Assets\Bouncer.cs" />
      <Compile Include="Assets\PlatformSpecific\MobileInput.cs" />
