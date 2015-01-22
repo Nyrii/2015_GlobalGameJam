@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class HealthBar : MonoBehaviour {
 	public Image healthBar;
 	public float playerHealth;
-	private float maxHealth = 1;
+	private float maxHealth = 2;
 	public float currentHealth = 1;
 
 	void Start () {
