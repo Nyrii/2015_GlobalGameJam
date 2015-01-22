@@ -50,6 +50,7 @@
      <Compile Include="Assets\BatScript.cs" />
      <Compile Include="Assets\BlinderTerrain.cs" />
      <Compile Include="Assets\Bouncer.cs" />
+     <Compile Include="Assets\OutOfTerrainBounds.cs" />
      <Compile Include="Assets\PlatformSpecific\MobileInput.cs" />
      <Compile Include="Assets\PlatformSpecific\StandaloneInput.cs" />
      <Compile Include="Assets\Scripts 1\AxisTouchButton.cs" />
