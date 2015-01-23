@@ -740,7 +740,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45172d7213e2fb04b9944bc1caff37fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  karmaAmount: 0
   karmaBar: {fileID: 0}
   karmaBarExtern: {fileID: 0}
 --- !u!1001 &1021708519

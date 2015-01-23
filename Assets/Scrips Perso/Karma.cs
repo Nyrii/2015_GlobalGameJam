@@ -2,9 +2,9 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public static class Karma : MonoBehaviour {
+public class Karma : MonoBehaviour {
 
-    public float karmaAmount = 0;
+    public static float karmaAmount = 0;
     float DecreaseVel;
     public Image karmaBar;
     public Image karmaBarExtern;
