@@ -7,6 +7,7 @@ public class Karma : MonoBehaviour {
     public float karmaAmount = 0;
     float DecreaseVel;
     public Image karmaBar;
+    public Image karmaBarExtern;
     _GameManager gm;
 
     void Start()
