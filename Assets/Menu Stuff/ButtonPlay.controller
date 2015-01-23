@@ -137,15 +137,29 @@ AnimationClip:
   m_PositionCurves: []
   m_ScaleCurves: []
   m_FloatCurves: []
-  m_PPtrCurves: []
-  m_SampleRate: 60
+  m_PPtrCurves:
+  - curve:
+    - time: 0
+      value: {fileID: 21300000, guid: ae5c26de292eb6a4882731c70018ad04, type: 3}
+    attribute: m_Sprite
+    path: 
+    classID: 114
+    script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_SampleRate: 1
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
   m_ClipBindingConstant:
-    genericBindings: []
-    pptrCurveMapping: []
+    genericBindings:
+    - path: 0
+      attribute: 2015549526
+      script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+      classID: 114
+      customType: 0
+      isPPtrCurve: 1
+    pptrCurveMapping:
+    - {fileID: 21300000, guid: ae5c26de292eb6a4882731c70018ad04, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_StartTime: 0
@@ -411,24 +425,24 @@ StateMachine:
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
     data:
-      first: {fileID: 110216966}
-      second: []
-    data:
-      first: {fileID: 110216964}
-      second: []
-    data:
-      first: {fileID: 110216962}
-      second: []
-    data:
-      first: {fileID: 110216960}
-      second: []
-    data:
       first: {fileID: 0}
       second:
       - {fileID: 110116960}
       - {fileID: 110116962}
       - {fileID: 110116964}
       - {fileID: 110116966}
+    data:
+      first: {fileID: 110216960}
+      second: []
+    data:
+      first: {fileID: 110216962}
+      second: []
+    data:
+      first: {fileID: 110216964}
+      second: []
+    data:
+      first: {fileID: 110216966}
+      second: []
   m_MotionSetCount: 1
   m_AnyStatePosition: {x: 50, y: 20, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
