@@ -23,6 +23,8 @@ namespace UnitySampleAssets._2D
         private float ceilingRadius = .01f; // Radius of the overlap circle to determine if the player can stand up
         private Animator anim; // Reference to the player's animator component.
 
+        public float karmaAmount = 0; //karma
+        public float health = 1; //health of the player
 
         private void Awake()
         {
@@ -31,7 +33,6 @@ namespace UnitySampleAssets._2D
             ceilingCheck = transform.Find("CeilingCheck");
             anim = GetComponent<Animator>();
         }
-
 
         private void FixedUpdate()
         {
