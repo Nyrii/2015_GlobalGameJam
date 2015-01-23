@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class Karma : MonoBehaviour {
+public static class Karma : MonoBehaviour {
 
     public float karmaAmount = 0;
     float DecreaseVel;
