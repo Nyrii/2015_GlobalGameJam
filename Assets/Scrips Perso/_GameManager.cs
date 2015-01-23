@@ -11,6 +11,7 @@ public class _GameManager : MonoBehaviour {
 
     //menu components for pause or quit
     public GameObject canvasObj;
+    public GameObject pauseMenu;
     public GameObject resumeText;
 
     void Start()
@@ -37,15 +38,23 @@ public class _GameManager : MonoBehaviour {
             {
                 canvasObj.SetActive(true);
                 resumeText.SetActive(true);
-                Time.timeScale = 0;
+                pauseMenu.GetComponent<Animation>().Play("MenuInAnim");
+                Invoke("SetTimeScale", 0.5f);
             }
             else
             {
-                canvasObj.SetActive(false);
-                resumeText.SetActive(false);
+                //canvasObj.SetActive(false);
+                //resumeText.SetActive(false);
+                pauseMenu.GetComponent<Animation>().Play("MenuOutAnim");
                 Time.timeScale = 1;
             }
         }
+    }
+
+
+    void SetTimeScale()
+    {
+        Time.timeScale = 0;
     }
 
     public void pauseMenuOnDeath(int choice)

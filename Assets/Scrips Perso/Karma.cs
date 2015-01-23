@@ -17,6 +17,6 @@ public class Karma : MonoBehaviour {
 
     void Update()
     {
-        karmaBar.fillAmount = Mathf.SmoothDamp(karmaBar.fillAmount, karmaAmount, ref DecreaseVel, 0.3f);	
+        //karmaBar.fillAmount = Mathf.SmoothDamp(karmaBar.fillAmount, karmaAmount, ref DecreaseVel, 0.3f);	
     }
 }
