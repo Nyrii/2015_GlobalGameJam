@@ -47,8 +47,6 @@ namespace UnitySampleAssets._2D
 
         public void Move(float move, bool crouch, bool jump)
         {
-
-
             // If crouching, check to see if the character can stand up
             if (!crouch && anim.GetBool("Crouch"))
             {
