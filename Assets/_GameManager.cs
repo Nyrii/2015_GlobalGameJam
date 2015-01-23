@@ -9,13 +9,12 @@ public class _GameManager : MonoBehaviour {
     PlatformerCharacter2D playerControl;
 
     //menu components for pause or quit
-    GameObject canvasObj;
+    public GameObject canvasObj;
 
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        canvasObj = GameObject.FindGameObjectWithTag("Canvas");
-        playerControl = playerControl.GetComponent<PlatformerCharacter2D>();
+        playerControl = player.GetComponent<PlatformerCharacter2D>();
         canvasObj.SetActive(false);
     }
 
@@ -26,6 +25,25 @@ public class _GameManager : MonoBehaviour {
             Destroy(player);
             canvasObj.SetActive(true);
             Time.timeScale = 0;
+        }
+    }
+
+    public void pauseMenu(int choice)
+    {
+        //1 = reload
+        //0 = menu
+        //-1 = quit
+        if (choice == 1)
+        {
+            Application.LoadLevel(Application.loadedLevel);
+        }
+        else if (choice == 0)
+        {
+            Application.LoadLevel("MainMenu");
+        }
+        else if (choice == -1)
+        {
+            Application.Quit();
         }
     }
 
