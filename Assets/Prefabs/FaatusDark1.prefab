@@ -186,7 +186,7 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 4294966783
-  karmaAmount: .5
+  karmaAmount: .600000024
   health: 1
 --- !u!114 &11419546
 MonoBehaviour:
