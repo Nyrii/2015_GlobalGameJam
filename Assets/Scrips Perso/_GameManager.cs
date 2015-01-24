@@ -43,8 +43,6 @@ public class _GameManager : MonoBehaviour {
             }
             else
             {
-                //canvasObj.SetActive(false);
-                //resumeText.SetActive(false);
                 pauseMenu.GetComponent<Animation>().Play("MenuOutAnim");
                 Time.timeScale = 1;
             }
