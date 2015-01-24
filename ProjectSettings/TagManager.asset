@@ -3,6 +3,7 @@
 --- !u!78 &1
 TagManager:
   tags:
+  - Bullet
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
@@ -17,7 +18,7 @@ TagManager:
   User Layer 10: Wall
   User Layer 11: Platform
   User Layer 12: Player
-  User Layer 13: 
+  User Layer 13: Bullet
   User Layer 14: 
   User Layer 15: 
   User Layer 16: 
