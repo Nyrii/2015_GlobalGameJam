@@ -32,6 +32,7 @@ public class ShootScript : MonoBehaviour {
             Vector2 newScale = new Vector2((player.transform.localScale.x < 0) ? -1 : 1, go.transform.localScale.y);
             go.transform.localScale = newScale;
             go.rigidbody2D.AddForce(new Vector2(bulletSpeed * newScale.x, 0f));
+            Destroy(go, 5f);
         }
         if (Input.GetKeyUp(KeyCode.Space))
         {

@@ -6,7 +6,9 @@ public class _GameManager : MonoBehaviour {
 
     [HideInInspector]
     public bool isPlaying;
+
     //Player components
+    public GameObject [] bulletPrefabs;
     GameObject player;
     PlatformerCharacter2D playerControl;
 
@@ -91,9 +93,11 @@ public class _GameManager : MonoBehaviour {
         {
             case 0:
                 player.GetComponent<Animator>().runtimeAnimatorController = allAnims[0];
+                player.GetComponent<ShootScript>().bulletPrefab = bulletPrefabs[0];
                 break;
             case 1:
                 player.GetComponent<Animator>().runtimeAnimatorController = allAnims[1];
+                player.GetComponent<ShootScript>().bulletPrefab = bulletPrefabs[1];
                 break;
         }
     }

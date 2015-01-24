@@ -114,6 +114,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlaying: 0
+  bulletPrefabs:
+  - {fileID: 199248, guid: 23ceaf69a348929458ec0ad0052efe56, type: 2}
+  - {fileID: 162898, guid: de76363563f7c67468ec7a732faac225, type: 2}
   canvasObj: {fileID: 1087006882}
   pauseMenu: {fileID: 2086403168}
   resumeText: {fileID: 2086589008}
