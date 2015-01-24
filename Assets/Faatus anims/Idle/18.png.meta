@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-guid: d5b1aca5372604748a849b884a8bf604
+guid: 1babf63e4d539c74883437f3f94389b6
 TextureImporter:
   fileIDToRecycleName:
-    21300000: 19_0
-    21300002: 19_1
+    21300000: 18_0
+    21300002: 18_1
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -45,25 +45,25 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: 19_0
+    - name: 18_0
       rect:
         serializedVersion: 2
         x: 61
         y: 34
         width: 94
-        height: 250
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 251
+      alignment: 9
+      pivot: {x: .5, y: .600000024}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 19_1
+    - name: 18_1
       rect:
         serializedVersion: 2
         x: 167
-        y: 217
+        y: 218
         width: 6
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

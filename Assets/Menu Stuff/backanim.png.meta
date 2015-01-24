@@ -1,9 +1,10 @@
 fileFormatVersion: 2
-guid: cb301d69eaa374b4a93c73dad3314622
+guid: 7f4726364803da249aea2072c43af7c1
 TextureImporter:
   fileIDToRecycleName:
-    21300000: 11_0
-    21300002: 11_1
+    21300000: backanim_0
+    21300002: backanim_1
+    21300004: backanim_2
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -23,10 +24,10 @@ TextureImporter:
   grayScaleToAlpha: 0
   generateCubemap: 0
   seamlessCubemap: 0
-  textureFormat: -3
-  maxTextureSize: 2048
+  textureFormat: -1
+  maxTextureSize: 1024
   textureSettings:
-    filterMode: 2
+    filterMode: -1
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -39,29 +40,39 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 240
+  spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: 11_0
+    - name: backanim_0
       rect:
         serializedVersion: 2
-        x: 61
-        y: 34
-        width: 94
-        height: 251
+        x: 5
+        y: 7
+        width: 425
+        height: 196
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 11_1
+    - name: backanim_1
       rect:
         serializedVersion: 2
-        x: 167
-        y: 218
-        width: 6
-        height: 7
+        x: 432
+        y: 16
+        width: 406
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: backanim_2
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 12
+        width: 425
+        height: 207
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

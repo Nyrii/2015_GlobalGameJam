@@ -1,9 +1,10 @@
 fileFormatVersion: 2
-guid: c5af10bd83add1640b773b161b8c6391
+guid: 2448a5cd490cfc643900da5b390cb4ee
 TextureImporter:
   fileIDToRecycleName:
-    21300000: 17_0
-    21300002: 17_1
+    21300000: reloadanim_0
+    21300002: reloadanim_1
+    21300004: reloadanim_2
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -23,10 +24,10 @@ TextureImporter:
   grayScaleToAlpha: 0
   generateCubemap: 0
   seamlessCubemap: 0
-  textureFormat: -3
-  maxTextureSize: 2048
+  textureFormat: -1
+  maxTextureSize: 1024
   textureSettings:
-    filterMode: 2
+    filterMode: -1
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -39,29 +40,39 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 240
+  spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: 17_0
+    - name: reloadanim_0
       rect:
         serializedVersion: 2
-        x: 61
-        y: 34
-        width: 94
-        height: 253
+        x: 15
+        y: 0
+        width: 413
+        height: 213
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: 17_1
+    - name: reloadanim_1
       rect:
         serializedVersion: 2
-        x: 167
-        y: 220
-        width: 6
-        height: 6
+        x: 442
+        y: 0
+        width: 404
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: reloadanim_2
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 1
+        width: 417
+        height: 216
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
