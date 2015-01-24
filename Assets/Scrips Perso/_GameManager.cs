@@ -14,7 +14,7 @@ public class _GameManager : MonoBehaviour {
     public GameObject pauseMenu;
     public GameObject resumeText;
 
-    void Start()
+    void Awake()
     {
         isPlaying = 1;
         player = GameObject.FindGameObjectWithTag("Player");
