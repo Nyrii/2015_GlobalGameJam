@@ -12,6 +12,7 @@ GameObject:
   - 61: {fileID: 6199248}
   - 50: {fileID: 5099248}
   - 111: {fileID: 11199248}
+  - 114: {fileID: 11411554}
   m_Layer: 13
   m_Name: BulletPrefab
   m_TagString: Bullet
@@ -72,6 +73,17 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!114 &11411554
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 199248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01546ac6bd3e83448b5ea3abb4f014a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &21299248
 SpriteRenderer:
   m_ObjectHideFlags: 1
