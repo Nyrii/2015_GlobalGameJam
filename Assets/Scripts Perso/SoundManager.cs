@@ -34,7 +34,6 @@ public class SoundManager : MonoBehaviour {
         }
         else if (karma > 0.6 && karma < 0.8 && index != 2)
         {
-            gm.SwitchCharacter(1);
             audio.Pause();
             currentMusicTime = audio.time;
             index = 2;
@@ -50,6 +49,10 @@ public class SoundManager : MonoBehaviour {
             audio.clip = musics[index];
             audio.time = currentMusicTime;
             audio.Play();
+        }
+        else if (karma < 0.4 && karma >= 0.2)
+        {
+            gm.SwitchCharacter(1);
         }
 	}
 }
