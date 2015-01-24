@@ -21,6 +21,7 @@ public class _GameManager : MonoBehaviour {
     RuntimeAnimatorController currentAnim;
     public RuntimeAnimatorController[] allAnims;
 
+    float lastPause = 1;
     void Awake()
     {
         isPlaying = true;
@@ -32,17 +33,19 @@ public class _GameManager : MonoBehaviour {
 
     void Update()
     {
+        lastPause -= Time.deltaTime;
         if (playerControl.health < 0)
         {
             Destroy(player);
             canvasObj.SetActive(true);
             Time.timeScale = 0;
         }
-        if (Input.GetKeyDown(KeyCode.Tab) && playerControl.health > 0)
+        if (Input.GetKeyDown(KeyCode.Tab) && playerControl.health > 0 && lastPause < 0)
         {
             isPlaying = !isPlaying;
             if (!isPlaying)
             {
+                lastPause = 1;
                 canvasObj.SetActive(true);
                 resumeText.SetActive(true);
                 pauseMenu.GetComponent<Animation>().Play("MenuInAnim");
@@ -60,6 +63,7 @@ public class _GameManager : MonoBehaviour {
     void SetTimeScale()
     {
         Time.timeScale = 0;
+        lastPause = -1;
     }
 
     public void pauseMenuOnDeath(int choice)
