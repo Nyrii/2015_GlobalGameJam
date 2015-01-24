@@ -98,10 +98,14 @@ public class _GameManager : MonoBehaviour {
             case 0:
                 player.GetComponent<Animator>().runtimeAnimatorController = allAnims[0];
                 player.GetComponent<ShootScript>().bulletPrefab = bulletPrefabs[0];
+                player.GetComponent<PlatformerCharacter2D>().maxSpeed = 10f;
+                player.GetComponent<PlatformerCharacter2D>().jumpForce = 400f;
                 break;
             case 1:
                 player.GetComponent<Animator>().runtimeAnimatorController = allAnims[1];
                 player.GetComponent<ShootScript>().bulletPrefab = bulletPrefabs[1];
+                player.GetComponent<PlatformerCharacter2D>().maxSpeed = 8f;
+                player.GetComponent<PlatformerCharacter2D>().jumpForce = 380f;
                 break;
         }
     }
