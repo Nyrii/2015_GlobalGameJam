@@ -7,6 +7,8 @@ public class ShootScript : MonoBehaviour {
     public GameObject bulletPrefab;
     public GameObject spawnSpot;
     public float bulletSpeed = 100;
+    public float shotDelay = 1f;
+    float lastShot = 0;
     GameObject player;
 
     //anim container
@@ -20,8 +22,10 @@ public class ShootScript : MonoBehaviour {
 	
 	void Update () 
     {
-	    if (Input.GetKeyDown(KeyCode.Space))
+        lastShot -= Time.deltaTime;
+	    if (Input.GetKey(KeyCode.Space) && lastShot < 0)
         {
+            lastShot = shotDelay;
             anim.SetBool("Shoot", true);
             GameObject go = (GameObject) Instantiate(bulletPrefab, spawnSpot.transform.position, Quaternion.identity);
             //sets the rotation based on player scale
