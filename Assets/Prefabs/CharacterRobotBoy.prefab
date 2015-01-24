@@ -186,7 +186,7 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 4294966783
-  karmaAmount: 0
+  karmaAmount: .5
   health: 1
 --- !u!114 &11411664
 MonoBehaviour:
@@ -199,8 +199,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0834a289e7dcdc44f95379e7becdb440, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 0}
-  spawnSpot: {fileID: 0}
+  bulletPrefab: {fileID: 199248, guid: 23ceaf69a348929458ec0ad0052efe56, type: 2}
+  spawnSpot: {fileID: 111664}
+  bulletSpeed: 500
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
