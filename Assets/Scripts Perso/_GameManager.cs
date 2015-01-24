@@ -4,6 +4,7 @@ using UnitySampleAssets._2D;
 
 public class _GameManager : MonoBehaviour {
 
+    [HideInInspector]
     public bool isPlaying;
     //Player components
     GameObject player;
@@ -13,6 +14,10 @@ public class _GameManager : MonoBehaviour {
     public GameObject canvasObj;
     public GameObject pauseMenu;
     public GameObject resumeText;
+
+    //get player controllers
+    RuntimeAnimatorController currentAnim;
+    public RuntimeAnimatorController[] allAnims;
 
     void Awake()
     {
@@ -78,4 +83,18 @@ public class _GameManager : MonoBehaviour {
         }
     }
 
+
+    public void SwitchCharacter(int index)
+    {
+        currentAnim = player.GetComponent<Animator>().runtimeAnimatorController;
+        switch (index)
+        {
+            case 0:
+                player.GetComponent<Animator>().runtimeAnimatorController = allAnims[0];
+                break;
+            case 1:
+                player.GetComponent<Animator>().runtimeAnimatorController = allAnims[1];
+                break;
+        }
+    }
 }

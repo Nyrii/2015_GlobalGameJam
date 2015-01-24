@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b83afd3c7f76033449abd9d39531a223
+guid: a965e8482e2fdf7419deff08d9d515df
 TextureImporter:
   fileIDToRecycleName:
     21300000: persoclef1_0
@@ -25,7 +25,7 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 1024
   textureSettings:
-    filterMode: 2
+    filterMode: -1
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -51,8 +51,8 @@ TextureImporter:
         y: 98
         width: 225
         height: 194
-      alignment: 9
-      pivot: {x: .5, y: .400000006}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

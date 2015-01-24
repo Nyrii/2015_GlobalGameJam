@@ -6,8 +6,8 @@ public class SoundManager : MonoBehaviour {
     float karma;
     float currentMusicTime = 0;
     int index;
-    public GameObject KarmaGauge;
     public AudioClip[] musics;
+    public _GameManager gm;
 
     void Start () 
     {
@@ -23,6 +23,7 @@ public class SoundManager : MonoBehaviour {
         karma = Karma.karmaAmount;
 	    if (karma <= 0.6 && karma >= 0.4 && index != 1 && Time.timeSinceLevelLoad > 6)
         {
+            gm.SwitchCharacter(0);
             audio.Pause();
             if (index != 4)
                 currentMusicTime = audio.time;
@@ -33,6 +34,7 @@ public class SoundManager : MonoBehaviour {
         }
         else if (karma > 0.6 && karma < 0.8 && index != 2)
         {
+            gm.SwitchCharacter(1);
             audio.Pause();
             currentMusicTime = audio.time;
             index = 2;
