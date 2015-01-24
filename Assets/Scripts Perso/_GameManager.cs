@@ -4,7 +4,7 @@ using UnitySampleAssets._2D;
 
 public class _GameManager : MonoBehaviour {
 
-    public int isPlaying;
+    public bool isPlaying;
     //Player components
     GameObject player;
     PlatformerCharacter2D playerControl;
@@ -16,7 +16,7 @@ public class _GameManager : MonoBehaviour {
 
     void Awake()
     {
-        isPlaying = 1;
+        isPlaying = true;
         player = GameObject.FindGameObjectWithTag("Player");
         playerControl = player.GetComponent<PlatformerCharacter2D>();
         canvasObj.SetActive(false);
@@ -33,8 +33,8 @@ public class _GameManager : MonoBehaviour {
         }
         if (Input.GetKeyDown(KeyCode.Tab) && playerControl.health > 0)
         {
-            isPlaying = (isPlaying == 0) ? 1 : 0;
-            if (isPlaying == 0)
+            isPlaying = !isPlaying;
+            if (!isPlaying)
             {
                 canvasObj.SetActive(true);
                 resumeText.SetActive(true);
@@ -60,7 +60,7 @@ public class _GameManager : MonoBehaviour {
         //1 = reload
         //0 = menu
         //-1 = quit
-        isPlaying = 0;
+        isPlaying = false;
         if (choice == 1)
         {
             Time.timeScale = 1;
