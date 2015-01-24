@@ -1,8 +1,8 @@
 fileFormatVersion: 2
-guid: b83afd3c7f76033449abd9d39531a223
+guid: 8672a68a5e01d44449e5b6c7cf66ca67
 TextureImporter:
   fileIDToRecycleName:
-    21300000: persoclef1_0
+    21300000: fille 2_0
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -25,7 +25,7 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 1024
   textureSettings:
-    filterMode: 2
+    filterMode: -1
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -38,21 +38,21 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 240
+  spritePixelsToUnits: 150
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: persoclef1_0
+    - name: fille 2_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 98
-        width: 225
-        height: 194
-      alignment: 9
-      pivot: {x: .5, y: .550000012}
+        x: 31
+        y: 14
+        width: 150
+        height: 266
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

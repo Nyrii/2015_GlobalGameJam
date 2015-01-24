@@ -26,8 +26,8 @@ public class EnnemyFollowScript : MonoBehaviour {
             Vector2 distance = player.transform.position - this.transform.position;
             if (distance.x < 10 && distance.x > -10)
             {
-                this.transform.localScale = new Vector3((distance.x > 0) ? 1 : -1, transform.localScale.y, 1);
-                this.rigidbody2D.velocity = new Vector2(4f * transform.localScale.x, 0);
+                this.transform.localScale = new Vector3((distance.x > 0) ? -1 : 1, transform.localScale.y, 1);
+                this.rigidbody2D.velocity = new Vector2(-4f * transform.localScale.x, 0);
             }
         }
     }

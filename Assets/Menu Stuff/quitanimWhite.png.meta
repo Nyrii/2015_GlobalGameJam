@@ -1,8 +1,10 @@
 fileFormatVersion: 2
-guid: b83afd3c7f76033449abd9d39531a223
+guid: 29b358dad897d3043888e2fafa85a72b
 TextureImporter:
   fileIDToRecycleName:
-    21300000: persoclef1_0
+    21300000: quitanimWhite_0
+    21300002: quitanimWhite_1
+    21300004: quitanimWhite_2
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -25,7 +27,7 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 1024
   textureSettings:
-    filterMode: 2
+    filterMode: -1
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -38,21 +40,41 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 240
+  spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: persoclef1_0
+    - name: quitanimWhite_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 98
-        width: 225
-        height: 194
-      alignment: 9
-      pivot: {x: .5, y: .550000012}
+        x: 9
+        y: 0
+        width: 422
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: quitanimWhite_1
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 8
+        width: 431
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: quitanimWhite_2
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 11
+        width: 423
+        height: 213
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
