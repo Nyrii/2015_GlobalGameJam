@@ -202,6 +202,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 199248, guid: 23ceaf69a348929458ec0ad0052efe56, type: 2}
   spawnSpot: {fileID: 111664}
   bulletSpeed: 500
+  shotDelay: .200000003
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
