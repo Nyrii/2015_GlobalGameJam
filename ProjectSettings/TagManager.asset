@@ -12,11 +12,11 @@ TagManager:
   Builtin Layer 5: UI
   Builtin Layer 6: 
   Builtin Layer 7: 
-  User Layer 8: 
-  User Layer 9: 
-  User Layer 10: 
-  User Layer 11: 
-  User Layer 12: 
+  User Layer 8: Background
+  User Layer 9: Traps
+  User Layer 10: Wall
+  User Layer 11: Platform
+  User Layer 12: Player
   User Layer 13: 
   User Layer 14: 
   User Layer 15: 
@@ -37,7 +37,27 @@ TagManager:
   User Layer 30: 
   User Layer 31: 
   m_SortingLayers:
+  - name: Background
+    userID: 1
+    uniqueID: 3500756531
+    locked: 0
   - name: Default
     userID: 0
     uniqueID: 0
+    locked: 0
+  - name: Traps
+    userID: 2
+    uniqueID: 2453956097
+    locked: 0
+  - name: Wall
+    userID: 3
+    uniqueID: 517449863
+    locked: 0
+  - name: Platform
+    userID: 4
+    uniqueID: 2714502497
+    locked: 0
+  - name: Player
+    userID: 5
+    uniqueID: 3969069205
     locked: 0

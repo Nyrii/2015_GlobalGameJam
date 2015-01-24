@@ -3,6 +3,8 @@ guid: b0173843979f44ac2bff3ddad87ca012
 TextureImporter:
   fileIDToRecycleName:
     21300000: goodly-2x_0
+    21300002: goodly-2x_1
+    21300004: goodly-2x_2
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -51,6 +53,26 @@ TextureImporter:
         y: 448
         width: 96
         height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goodly-2x_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: goodly-2x_2
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 352
+        width: 32
+        height: 33
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
