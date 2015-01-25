@@ -1,8 +1,8 @@
 fileFormatVersion: 2
-guid: 1b643711a7ae22f47bcdefc7b3046d98
+guid: 3bac511d918cf4a4f8e8f97ddd877f3a
 TextureImporter:
   fileIDToRecycleName:
-    21300000: succube2_0
+    21300000: 8_0
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -44,13 +44,13 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: succube2_0
+    - name: 8_0
       rect:
         serializedVersion: 2
-        x: 64
-        y: 21
-        width: 263
-        height: 307
+        x: 4
+        y: 0
+        width: 251
+        height: 299
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
