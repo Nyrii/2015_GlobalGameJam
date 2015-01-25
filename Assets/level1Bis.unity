@@ -4008,7 +4008,7 @@ MonoBehaviour:
   - {fileID: 9100000, guid: ccf76ed41ede5e84484253e7e3197277, type: 2}
   - {fileID: 9100000, guid: adba0acccd92b044faf99f1a8a5288b9, type: 2}
   - {fileID: 9100000, guid: 321adbd6481beab4481e942a4dd1f437, type: 2}
-  - {fileID: 9100000, guid: 321adbd6481beab4481e942a4dd1f437, type: 2}
+  - {fileID: 9100000, guid: 2ec0595e43f459e44849a780aeb81f6f, type: 2}
 --- !u!1 &324859389
 GameObject:
   m_ObjectHideFlags: 0
@@ -8562,6 +8562,10 @@ Prefab:
       propertyPath: resumeText
       value: 
       objectReference: {fileID: 2086589008}
+    - target: {fileID: 11473252, guid: 368e95f3f5109ca4a8ed4df951b29f53, type: 2}
+      propertyPath: allAnims.Array.data[4]
+      value: 
+      objectReference: {fileID: 9100000, guid: 2ec0595e43f459e44849a780aeb81f6f, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 368e95f3f5109ca4a8ed4df951b29f53, type: 2}
   m_RootGameObject: {fileID: 319099963}

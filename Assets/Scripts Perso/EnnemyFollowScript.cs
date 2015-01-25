@@ -39,6 +39,7 @@ public class EnnemyFollowScript : MonoBehaviour {
         {
             Destroy(col.gameObject);
             player.GetComponent<PlatformerCharacter2D>().health = -1;
+            Application.LoadLevel(Application.loadedLevel);
             Debug.LogWarning("Display menu here");
             //GM.GetComponent<_GameManager>().pauseMenuOnDeath(0);
         }

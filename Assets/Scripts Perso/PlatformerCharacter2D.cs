@@ -35,6 +35,11 @@ namespace UnitySampleAssets._2D
             anim = GetComponent<Animator>();
         }
 
+        void Update()
+        {
+            karmaAmount += Time.deltaTime * 0.01f;
+        }
+
         private void FixedUpdate()
         {
             // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground

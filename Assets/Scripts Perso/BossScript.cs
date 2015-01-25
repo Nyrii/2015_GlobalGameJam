@@ -77,6 +77,7 @@ public class BossScript : MonoBehaviour {
             healthBar.fillAmount = 0;
             this.GetComponent<BossScript>().enabled = false;
             Destroy(this.gameObject, screams[3].length);
+            Application.LoadLevel("LevelQuit");
             //this.gameObject.SetActive(false);
         }
 	}

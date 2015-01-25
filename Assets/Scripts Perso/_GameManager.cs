@@ -36,6 +36,7 @@ public class _GameManager : MonoBehaviour {
     {
         //if (Application.loadedLevel == 0)
           //  Destroy(this.gameObject);
+        player = GameObject.FindGameObjectWithTag("Player");
         lastPause -= Time.deltaTime;
         if (playerControl.health < 0)
         {
@@ -129,7 +130,7 @@ public class _GameManager : MonoBehaviour {
                     player.GetComponent<Animator>().runtimeAnimatorController = allAnims[4];
                     player.GetComponent<ShootScript>().bulletPrefab = bulletPrefabs[0];
                     player.GetComponent<PlatformerCharacter2D>().maxSpeed = 10f;
-                    player.GetComponent<PlatformerCharacter2D>().jumpForce = 550f;
+                    player.GetComponent<PlatformerCharacter2D>().jumpForce = 600f;
                     break;
             }
         }
