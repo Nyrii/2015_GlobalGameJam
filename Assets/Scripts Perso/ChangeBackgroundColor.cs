@@ -16,6 +16,11 @@ public class ChangeBackgroundColor : MonoBehaviour {
 
     void Update()
     {
+        if (playerData == null)
+        {
+            playerData = GameObject.FindGameObjectWithTag("Player").GetComponent<PlatformerCharacter2D>();
+            return;
+        }
         karmaAmount = playerData.karmaAmount;
         Debug.Log("KARMA = " + karmaAmount);
         redBG.color = new Color(1, 1, 1, Mathf.Clamp01(1 - 2 * karmaAmount));
