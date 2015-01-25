@@ -4909,7 +4909,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 199248, guid: 23ceaf69a348929458ec0ad0052efe56, type: 2}
   spawnSpot: {fileID: 457587485}
-  bulletSpeed: 500
+  bulletSpeed: 600
   shotDelay: .200000003
   shotSound: {fileID: 8300000, guid: d8d9c4015619dec41b4d260bb4da294b, type: 3}
 --- !u!212 &415908081
@@ -26735,6 +26735,10 @@ Prefab:
       propertyPath: jumpSound
       value: 
       objectReference: {fileID: 8300000, guid: 2432060ccd8c14a41ae33f50f44afa73, type: 3}
+    - target: {fileID: 11483922, guid: 3f0c60443a443944b9dba06a987663fb, type: 2}
+      propertyPath: bulletSpeed
+      value: 600
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3f0c60443a443944b9dba06a987663fb, type: 2}
   m_RootGameObject: {fileID: 415908078}
