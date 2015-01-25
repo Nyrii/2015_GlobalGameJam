@@ -683,7 +683,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 984c3b068297bd542a7b7ff7a4a62863, type: 3}
   - {fileID: 8300000, guid: e1cc6ca375635e34a8b117b1a9fe9ce8, type: 3}
   - {fileID: 8300000, guid: fc8f19e4357d060448d5355e7fb97f10, type: 3}
-  shotDelay: 100
+  shotDelay: 3
   life: 1
 --- !u!82 &510340189
 AudioSource:
@@ -1417,7 +1417,7 @@ Animator:
   m_GameObject: {fileID: 1014242171}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a6d2b45b7be6b23419987f8a519ae5e7, type: 2}
+  m_Controller: {fileID: 9100000, guid: 2ec0595e43f459e44849a780aeb81f6f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 1
   m_ApplyRootMotion: 0
@@ -2309,6 +2309,10 @@ Prefab:
       propertyPath: karmaAmount
       value: .300000012
       objectReference: {fileID: 0}
+    - target: {fileID: 9583922, guid: 3f0c60443a443944b9dba06a987663fb, type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 2ec0595e43f459e44849a780aeb81f6f, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3f0c60443a443944b9dba06a987663fb, type: 2}
   m_RootGameObject: {fileID: 1014242171}
