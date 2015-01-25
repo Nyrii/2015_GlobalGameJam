@@ -56,7 +56,6 @@ public class BossScript : MonoBehaviour {
         {
             canvasVictory.SetActive(true);
             healthBar.fillAmount = 0;
-            Time.timeScale = 0;
             Destroy(this.gameObject);
         }
 	}

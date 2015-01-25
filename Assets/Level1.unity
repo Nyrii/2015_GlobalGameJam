@@ -1524,6 +1524,10 @@ Prefab:
       propertyPath: m_Pivot.y
       value: .599999964
       objectReference: {fileID: 0}
+    - target: {fileID: 9583922, guid: 3f0c60443a443944b9dba06a987663fb, type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a6d2b45b7be6b23419987f8a519ae5e7, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3f0c60443a443944b9dba06a987663fb, type: 2}
   m_RootGameObject: {fileID: 415908078}
@@ -1776,13 +1780,13 @@ MonoBehaviour:
 --- !u!114 &1410339104
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11459356, guid: 1c00db1ef5d67c14db12fd6127ed11e2,
+  m_PrefabParentObject: {fileID: 11437690, guid: 1c00db1ef5d67c14db12fd6127ed11e2,
     type: 2}
   m_PrefabInternal: {fileID: 1945592515}
   m_GameObject: {fileID: 1410339097}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d8238cc53530b64fbb7828c3d3bb591, type: 3}
+  m_Script: {fileID: 11500000, guid: ff79c164395d9194aa902b0bcc39ad56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 415908079}
@@ -1790,6 +1794,8 @@ MonoBehaviour:
   lookAheadFactor: 3
   lookAheadReturnSpeed: .5
   lookAheadMoveThreshold: .100000001
+  xCorretion: 0
+  yCorrection: 0
 --- !u!1 &1478525276
 GameObject:
   m_ObjectHideFlags: 0
@@ -2035,6 +2041,22 @@ Prefab:
       propertyPath: target
       value: 
       objectReference: {fileID: 415908079}
+    - target: {fileID: 11437690, guid: 1c00db1ef5d67c14db12fd6127ed11e2, type: 2}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 415908079}
+    - target: {fileID: 11437690, guid: 1c00db1ef5d67c14db12fd6127ed11e2, type: 2}
+      propertyPath: xCorretion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11437690, guid: 1c00db1ef5d67c14db12fd6127ed11e2, type: 2}
+      propertyPath: yCorrection
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11437690, guid: 1c00db1ef5d67c14db12fd6127ed11e2, type: 2}
+      propertyPath: damping
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1c00db1ef5d67c14db12fd6127ed11e2, type: 2}
   m_RootGameObject: {fileID: 1410339097}
