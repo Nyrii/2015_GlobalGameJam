@@ -8,6 +8,7 @@ public class ShootScript : MonoBehaviour {
     public GameObject spawnSpot;
     public float bulletSpeed = 100;
     public float shotDelay = 1f;
+    public AudioClip shotSound;
     float lastShot = 0;
     GameObject player;
 
@@ -25,6 +26,7 @@ public class ShootScript : MonoBehaviour {
         lastShot -= Time.deltaTime;
 	    if (Input.GetKey(KeyCode.Space) && lastShot < 0)
         {
+            audio.PlayOneShot(shotSound);
             lastShot = shotDelay;
             anim.SetBool("Shoot", true);
             GameObject go = (GameObject) Instantiate(bulletPrefab, spawnSpot.transform.position, Quaternion.identity);
