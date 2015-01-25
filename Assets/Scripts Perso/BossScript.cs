@@ -9,6 +9,8 @@ public class BossScript : MonoBehaviour {
     public GameObject bullet;
     public GameObject spawnPoint;
     public GameObject canvasVictory;
+    public float shotDelay = 3f;
+    float lastShot = 0;
     public int life = 100;
     int currentLife;
     public Image healthBar;
@@ -34,10 +36,12 @@ public class BossScript : MonoBehaviour {
 	
 	void Update () 
     {
-        if (Random.Range(0, 10) == 9)
+        lastShot -= Time.deltaTime;
+        if (Random.Range(0, 10) == 9 && lastShot < 0)
         {
+            lastShot = shotDelay;
             GameObject go = (GameObject) Instantiate(bullet, spawnPoint.transform.position, Quaternion.identity);
-            go.rigidbody2D.AddForce((player.transform.position - this.transform.position).normalized * 5000f);
+            go.rigidbody2D.AddForce((player.transform.position - this.transform.position).normalized * 300F);
         }
         if (Random.Range(0, 10) == 0)
         {

@@ -673,6 +673,7 @@ MonoBehaviour:
   bullet: {fileID: 192632, guid: 89adff7495eba004db285f3af6aaaf50, type: 2}
   spawnPoint: {fileID: 276916446}
   canvasVictory: {fileID: 2022832765}
+  shotDelay: 2
   life: 100
   healthBar: {fileID: 0}
 --- !u!1001 &599989521
