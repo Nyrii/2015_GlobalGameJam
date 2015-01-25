@@ -13,12 +13,15 @@ public class BossScript : MonoBehaviour {
     int currentLife;
     public Image healthBar;
     float currentVel;
-    GameObject player;
+    GameObject player = null;
 
 	void Start () 
     {
         currentLife = life;
         canvasVictory.SetActive(false);
+        while (player == null)
+            player = GameObject.FindGameObjectWithTag("Player");
+        Debug.Log(player);
 	    if (player.GetComponent<PlatformerCharacter2D>().karmaAmount >= 0.5)
         {
             this.GetComponent<Animator>().runtimeAnimatorController = boss[0];
@@ -31,16 +34,16 @@ public class BossScript : MonoBehaviour {
 	
 	void Update () 
     {
-        if (Random.Range(0, 10) == 10)
+        if (Random.Range(0, 10) == 9)
         {
             GameObject go = (GameObject) Instantiate(bullet, spawnPoint.transform.position, Quaternion.identity);
-            this.rigidbody2D.AddForce(player.transform.position - this.transform.position);
+            go.rigidbody2D.AddForce((player.transform.position - this.transform.position).normalized * 5000f);
         }
         if (Random.Range(0, 10) == 0)
         {
             StartCoroutine(ShootLaser());
         }
-        healthBar.fillAmount = Mathf.SmoothDamp(healthBar.fillAmount, currentLife, ref currentVel, 0.5f);
+        //healthBar.fillAmount = Mathf.SmoothDamp(healthBar.fillAmount, currentLife, ref currentVel, 0.5f);
         if (currentLife <= 0)
         {
             canvasVictory.SetActive(true);
