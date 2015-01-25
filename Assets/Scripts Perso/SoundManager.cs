@@ -62,13 +62,13 @@ public class SoundManager : MonoBehaviour {
         }
         else if (karma < 0.2 & index != 6)
         {
+            gm.SwitchCharacter(2);
             audio.Pause();
             currentMusicTime = audio.time;
             index = 6;
             audio.clip = musics[index];
             audio.time = currentMusicTime;
             audio.Play();
-            //gm.SwitchCharacter(2);
         }
 	}
 }

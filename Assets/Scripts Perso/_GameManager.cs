@@ -108,6 +108,12 @@ public class _GameManager : MonoBehaviour {
                     player.GetComponent<PlatformerCharacter2D>().maxSpeed = 8f;
                     player.GetComponent<PlatformerCharacter2D>().jumpForce = 380f;
                     break;
+                case 2:
+                    player.GetComponent<Animator>().runtimeAnimatorController = allAnims[2];
+                    player.GetComponent<ShootScript>().bulletPrefab = bulletPrefabs[1];
+                    player.GetComponent<PlatformerCharacter2D>().maxSpeed = 3f;
+                    player.GetComponent<PlatformerCharacter2D>().jumpForce = 300f;
+                    break;
             }
         }
     }

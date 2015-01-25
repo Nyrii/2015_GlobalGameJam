@@ -17,6 +17,7 @@ public class ChangeBackgroundColor : MonoBehaviour {
     void Update()
     {
         karmaAmount = playerData.karmaAmount;
+        Debug.Log("KARMA = " + karmaAmount);
         redBG.color = new Color(1, 1, 1, Mathf.Clamp01(1 - 2 * karmaAmount));
         blueBG.color = new Color(1, 1, 1, Mathf.Clamp01(2 * karmaAmount - 1f));
     }
