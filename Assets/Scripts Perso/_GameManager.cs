@@ -24,6 +24,7 @@ public class _GameManager : MonoBehaviour {
     float lastPause = 1;
     void Awake()
     {
+        DontDestroyOnLoad(this.gameObject);
         isPlaying = true;
         player = GameObject.FindGameObjectWithTag("Player");
         playerControl = player.GetComponent<PlatformerCharacter2D>();
@@ -33,6 +34,8 @@ public class _GameManager : MonoBehaviour {
 
     void Update()
     {
+        if (Application.loadedLevel == 0)
+            Destroy(this.gameObject);
         lastPause -= Time.deltaTime;
         if (playerControl.health < 0)
         {
@@ -75,6 +78,7 @@ public class _GameManager : MonoBehaviour {
         if (choice == 1)
         {
             Time.timeScale = 1;
+            Destroy(this.gameObject, 0.1f);
             Application.LoadLevel(Application.loadedLevel);
         }
         else if (choice == 0)

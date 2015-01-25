@@ -718,7 +718,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ed3e2b9ea39cae441a83330497d5558b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9be359ca7a2689f4ca4616c7bbe65d0f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: .219607845}
 --- !u!1 &865855016
 GameObject:
@@ -768,7 +768,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4b0b19a4ad37347dc94ac83e5a1d4674, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8ee52f0d5e1044c45a178f6b939cc51a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &905207280
 GameObject:
@@ -1169,7 +1169,6 @@ GameObject:
   - 223: {fileID: 1087006886}
   - 114: {fileID: 1087006885}
   - 114: {fileID: 1087006884}
-  - 95: {fileID: 1087006888}
   - 212: {fileID: 1087006887}
   m_Layer: 5
   m_Name: Canvas
@@ -1272,21 +1271,6 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!95 &1087006888
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1087006882}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d54fb354db1bd0541b3d0b3e7b5b4b9a, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1311300114
 GameObject:
   m_ObjectHideFlags: 0
