@@ -75,6 +75,7 @@ public class BossScript : MonoBehaviour {
             }
             canvasVictory.SetActive(true);
             healthBar.fillAmount = 0;
+            this.GetComponent<BossScript>().enabled = false;
             Destroy(this.gameObject, screams[3].length);
             //this.gameObject.SetActive(false);
         }
