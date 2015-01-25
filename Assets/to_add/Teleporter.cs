@@ -30,10 +30,11 @@ public class Teleporter : MonoBehaviour {
 
 	void OnTriggerEnter2D (Collider2D col)
 	{
+        Debug.Log(tmpKarma.karmaAmount);
 		if (tmpKarma.karmaAmount < 0.5f && Indicator == 0 || tmpKarma.karmaAmount >= 0.5f && Indicator == 1)
 			if (lastActivation <= 0)
 			{
-				this.transform.GetChild(0).particleSystem.Play();
+				//this.transform.GetChild(0).particleSystem.Play();
 				player = col.gameObject;
 				col.gameObject.SetActive(false);
 				Invoke("Teleport", 0.5f);
@@ -45,7 +46,7 @@ public class Teleporter : MonoBehaviour {
 		if (player != null)
 		{
 			lastActivation = activationDelay;
-			pairedTeleporter.GetComponent<Teleporter>().transform.GetChild(0).gameObject.transform.particleSystem.Play();
+			//pairedTeleporter.GetComponent<Teleporter>().transform.GetChild(0).gameObject.transform.particleSystem.Play();
 			pairedTeleporter.GetComponent<Teleporter>().lastActivation = activationDelay;  //could also set different teleporting timer, so we would have to get the variable
 			player.SetActive(true);
 			player.transform.position = pairedTeleporter.transform.position;

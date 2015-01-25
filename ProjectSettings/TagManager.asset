@@ -63,3 +63,7 @@ TagManager:
     userID: 5
     uniqueID: 3969069205
     locked: 0
+  - name: Teleporter
+    userID: 6
+    uniqueID: 2863635873
+    locked: 0
