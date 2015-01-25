@@ -34,8 +34,8 @@ public class _GameManager : MonoBehaviour {
 
     void Update()
     {
-        if (Application.loadedLevel == 0)
-            Destroy(this.gameObject);
+        //if (Application.loadedLevel == 0)
+          //  Destroy(this.gameObject);
         lastPause -= Time.deltaTime;
         if (playerControl.health < 0)
         {

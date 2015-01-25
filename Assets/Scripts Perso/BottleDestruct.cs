@@ -15,6 +15,7 @@ public class BottleDestruct : MonoBehaviour {
         {
             Destroy(col.gameObject);
             Destroy(this.gameObject);
+            Application.LoadLevel(Application.loadedLevel);
             Debug.LogWarning("END HERE");
         }
         else
