@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnitySampleAssets._2D;
 
 public class SoundManager : MonoBehaviour {
 
@@ -11,6 +12,7 @@ public class SoundManager : MonoBehaviour {
 
     void Start () 
     {
+        gm = GameObject.Find("_GameManager").GetComponent<_GameManager>();
         index = 4;
         audio.clip = musics[index];
         audio.Play();
@@ -20,7 +22,9 @@ public class SoundManager : MonoBehaviour {
 	
 	void Update () 
     {
-        karma = Karma.karmaAmount;
+        //karma = Karma.karmaAmount;
+        karma = GameObject.FindGameObjectWithTag("Player").GetComponent<PlatformerCharacter2D>().karmaAmount;
+        Debug.Log(karma);
 	    if (karma <= 0.6 && karma >= 0.4 && index != 1 && Time.timeSinceLevelLoad > 6)
         {
             gm.SwitchCharacter(0);

@@ -9,11 +9,12 @@ public class BossScript : MonoBehaviour {
     public GameObject bullet;
     public GameObject spawnPoint;
     public GameObject canvasVictory;
+    public GameObject[] canvas;
     public float shotDelay = 3f;
     float lastShot = 0;
-    public int life = 100;
-    int currentLife;
-    public Image healthBar;
+    public float life = 1;
+    float currentLife;
+    Image healthBar;
     float currentVel;
     GameObject player = null;
 
@@ -26,12 +27,15 @@ public class BossScript : MonoBehaviour {
         Debug.Log(player);
 	    if (player.GetComponent<PlatformerCharacter2D>().karmaAmount >= 0.5)
         {
+            canvas[1].SetActive(false);
             this.GetComponent<Animator>().runtimeAnimatorController = boss[0];
         }
         else
         {
+            canvas[0].SetActive(false);
             this.GetComponent<Animator>().runtimeAnimatorController = boss[1];
         }
+        healthBar = GameObject.Find("GaugeIn").GetComponent<Image>();
 	}
 	
 	void Update () 
@@ -47,10 +51,13 @@ public class BossScript : MonoBehaviour {
         {
             StartCoroutine(ShootLaser());
         }
-        //healthBar.fillAmount = Mathf.SmoothDamp(healthBar.fillAmount, currentLife, ref currentVel, 0.5f);
+        healthBar.fillAmount = Mathf.SmoothDamp(healthBar.fillAmount, currentLife, ref currentVel, 0.5f);
         if (currentLife <= 0)
         {
             canvasVictory.SetActive(true);
+            healthBar.fillAmount = 0;
+            Time.timeScale = 0;
+            Destroy(this.gameObject);
         }
 	}
 
@@ -60,6 +67,7 @@ public class BossScript : MonoBehaviour {
     }
     void OnCollisionEnter2D(Collision2D col)
     {
-        currentLife--;
+        Debug.Log(currentLife);
+        currentLife -= 0.1f;
     }
 }
