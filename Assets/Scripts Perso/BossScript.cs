@@ -17,6 +17,7 @@ public class BossScript : MonoBehaviour {
     float currentLife;
     Image healthBar;
     float currentVel;
+    float karmaSaved;
     GameObject player = null;
 
 	void Start () 
@@ -37,6 +38,7 @@ public class BossScript : MonoBehaviour {
             this.GetComponent<Animator>().runtimeAnimatorController = boss[1];
         }
         healthBar = GameObject.Find("GaugeIn").GetComponent<Image>();
+        karmaSaved = player.GetComponent<PlatformerCharacter2D>().karmaAmount;
 	}
 	
 	void Update () 
@@ -63,7 +65,7 @@ public class BossScript : MonoBehaviour {
         healthBar.fillAmount = Mathf.SmoothDamp(healthBar.fillAmount, currentLife, ref currentVel, 0.5f);
         if (currentLife <= 0)
         {
-            if (player.GetComponent<PlatformerCharacter2D>().karmaAmount >= 0.5)
+            if (karmaSaved >= 0.5)
             {
                 audio.PlayOneShot(screams[2]);
             }
