@@ -25,6 +25,7 @@ namespace UnitySampleAssets._2D
 
         public float karmaAmount = 0.5f; //karma
         public float health = 1; //health of the player
+        public AudioClip jumpSound;
 
         private void Awake()
         {
@@ -86,6 +87,7 @@ namespace UnitySampleAssets._2D
                 grounded = false;
                 anim.SetBool("Ground", false);
                 rigidbody2D.AddForce(new Vector2(0f, jumpForce));
+                audio.PlayOneShot(jumpSound, 10f);
             }
         }
 

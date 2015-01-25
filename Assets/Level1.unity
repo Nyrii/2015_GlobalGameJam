@@ -334,6 +334,7 @@ MonoBehaviour:
     m_Bits: 4294966783
   karmaAmount: .5
   health: 1
+  jumpSound: {fileID: 8300000, guid: 2432060ccd8c14a41ae33f50f44afa73, type: 3}
 --- !u!50 &415908086
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -2185,6 +2186,10 @@ Prefab:
       propertyPath: m_Pivot.y
       value: .599999964
       objectReference: {fileID: 0}
+    - target: {fileID: 11483926, guid: 3f0c60443a443944b9dba06a987663fb, type: 2}
+      propertyPath: jumpSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 2432060ccd8c14a41ae33f50f44afa73, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3f0c60443a443944b9dba06a987663fb, type: 2}
   m_RootGameObject: {fileID: 415908078}
