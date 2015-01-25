@@ -75,6 +75,7 @@ public class _GameManager : MonoBehaviour {
         //0 = menu
         //-1 = quit
         isPlaying = false;
+        Time.timeScale = 0;
         if (choice == 1)
         {
             Time.timeScale = 1;

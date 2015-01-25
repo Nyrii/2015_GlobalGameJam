@@ -39,11 +39,10 @@ public class EnnemyFollowScript : MonoBehaviour {
         {
             Destroy(col.gameObject);
             Debug.LogWarning("Display menu here");
-            //TODO: disp menu
+            GM.GetComponent<_GameManager>().pauseMenuOnDeath(0);
         }
         else if (col.gameObject.tag == "Bullet")
         {
-            //Destroy(col.gameObject);
             player.GetComponent<PlatformerCharacter2D>().karmaAmount -= 0.1f;
             Destroy(this.gameObject);
         }
