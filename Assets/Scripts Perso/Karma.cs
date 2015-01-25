@@ -10,12 +10,12 @@ public class Karma : MonoBehaviour {
     float DecreaseVel2;
     private Image karmaEvilGauge;
     private Image karmaGoodGauge;
-    _GameManager gm;
+    //_GameManager gm;
     PlatformerCharacter2D playerStats;
 
     void Start()
     {
-        gm = GameObject.Find("_GameManager").GetComponent<_GameManager>();
+        //gm = GameObject.Find("_GameManager").GetComponent<_GameManager>();
         //gets the two gauges which are children
         karmaEvilGauge = gameObject.transform.GetChild(0).GetComponent<Image>();
         karmaGoodGauge = gameObject.transform.GetChild(1).GetComponent <Image>();

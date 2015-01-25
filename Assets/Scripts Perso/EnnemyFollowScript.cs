@@ -7,12 +7,12 @@ public class EnnemyFollowScript : MonoBehaviour {
     public int ennemyLives = 1;
 
     GameObject player;
-    GameObject GM;
+    //GameObject GM;
 
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        GM = GameObject.Find("_GameManager");
+        //GM = GameObject.Find("_GameManager");
     }
 
     void Update()
@@ -38,8 +38,9 @@ public class EnnemyFollowScript : MonoBehaviour {
         if (col.gameObject.tag == "Player")
         {
             Destroy(col.gameObject);
+            player.GetComponent<PlatformerCharacter2D>().health = -1;
             Debug.LogWarning("Display menu here");
-            GM.GetComponent<_GameManager>().pauseMenuOnDeath(0);
+            //GM.GetComponent<_GameManager>().pauseMenuOnDeath(0);
         }
         else if (col.gameObject.tag == "Bullet")
         {
