@@ -27,7 +27,7 @@ public class BossScript : MonoBehaviour {
         while (player == null)
             player = GameObject.FindGameObjectWithTag("Player");
         Debug.Log(player);
-	    if (player.GetComponent<PlatformerCharacter2D>().karmaAmount >= 0.5)
+	    if (GameObject.Find("KarmaKeeper").GetComponent<KarmaKeeper>().karmaSaved >= 0.5)
         {
             canvas[1].SetActive(false);
             this.GetComponent<Animator>().runtimeAnimatorController = boss[0];

@@ -24,7 +24,9 @@ public class _GameManager : MonoBehaviour {
     float lastPause = 1;
     void Awake()
     {
-        DontDestroyOnLoad(this.gameObject);
+		GameObject gm;
+		if ((gm = GameObject.Find("_GameManager")) != null && gm != this.gameObject)
+			Destroy(gm);
         isPlaying = true;
         player = GameObject.FindGameObjectWithTag("Player");
         playerControl = player.GetComponent<PlatformerCharacter2D>();
@@ -34,11 +36,7 @@ public class _GameManager : MonoBehaviour {
 
     void Update()
     {
-        //if (Application.loadedLevel == 0)
-          //  Destroy(this.gameObject);
         player = GameObject.FindGameObjectWithTag("Player");
-        //if (player == null & Time.timeSinceLevelLoad > 3)
-          //  Application.LoadLevel(Application.loadedLevel);
         lastPause -= Time.deltaTime;
         if (playerControl.health < 0)
         {

@@ -59,8 +59,7 @@ public class EnnemyPunkAI : MonoBehaviour {
     {
         if (col.gameObject.tag == "Player")
         {
-            Destroy(col.gameObject);
-            Debug.LogWarning("MENU HERE");
+			Application.LoadLevel(Application.loadedLevel);
         }
         else if (col.gameObject.tag == "Bullet")
         {

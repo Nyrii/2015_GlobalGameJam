@@ -35,7 +35,7 @@ GameObject:
   - 4: {fileID: 483922}
   m_Layer: 0
   m_Name: SpawnSpot
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 266726316, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50,7 +50,7 @@ GameObject:
   - 4: {fileID: 483924}
   m_Layer: 0
   m_Name: CeilingCheck
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: -2065832391, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65,7 +65,7 @@ GameObject:
   - 4: {fileID: 483926}
   m_Layer: 9
   m_Name: GroundCheck
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: -2065832391, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -263,6 +263,7 @@ MonoBehaviour:
     m_Bits: 4294966783
   karmaAmount: .5
   health: 1
+  jumpSound: {fileID: 8300000, guid: 2432060ccd8c14a41ae33f50f44afa73, type: 3}
 --- !u!212 &21283922
 SpriteRenderer:
   m_ObjectHideFlags: 1
