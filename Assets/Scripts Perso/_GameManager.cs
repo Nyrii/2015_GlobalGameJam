@@ -37,6 +37,8 @@ public class _GameManager : MonoBehaviour {
         //if (Application.loadedLevel == 0)
           //  Destroy(this.gameObject);
         player = GameObject.FindGameObjectWithTag("Player");
+        //if (player == null & Time.timeSinceLevelLoad > 3)
+          //  Application.LoadLevel(Application.loadedLevel);
         lastPause -= Time.deltaTime;
         if (playerControl.health < 0)
         {
@@ -124,13 +126,13 @@ public class _GameManager : MonoBehaviour {
                     player.GetComponent<Animator>().runtimeAnimatorController = allAnims[3];
                     player.GetComponent<ShootScript>().bulletPrefab = bulletPrefabs[0];
                     player.GetComponent<PlatformerCharacter2D>().maxSpeed = 10f;
-                    player.GetComponent<PlatformerCharacter2D>().jumpForce = 500f;
+                    player.GetComponent<PlatformerCharacter2D>().jumpForce = 600f;
                     break;
                 case 4:
                     player.GetComponent<Animator>().runtimeAnimatorController = allAnims[4];
                     player.GetComponent<ShootScript>().bulletPrefab = bulletPrefabs[0];
                     player.GetComponent<PlatformerCharacter2D>().maxSpeed = 10f;
-                    player.GetComponent<PlatformerCharacter2D>().jumpForce = 600f;
+                    player.GetComponent<PlatformerCharacter2D>().jumpForce = 750f;
                     break;
             }
         }

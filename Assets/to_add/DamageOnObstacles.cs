@@ -17,7 +17,8 @@ public class DamageOnObstacles : MonoBehaviour {
 
 	void die(GameObject Player)
 	{
-        Player.gameObject.GetComponent<UnitySampleAssets._2D.PlatformerCharacter2D>().health = -1;
-		//Destroy(Player);
+        if (Player.tag == "Player")
+        Application.LoadLevel(Application.loadedLevel);
+        //Destroy(Player);
 	}
 }
